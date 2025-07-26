@@ -1,0 +1,56 @@
+/* ---- Background and Font ---- */
+body {
+  background: transparent !important;
+}
+
+#controller {
+  transform: scale(1.0);
+  position: relative;
+}
+
+#controller::after {
+  content: "Axura";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 32px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color: #00aaff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+
+/* ---- Customize Button Highlights ---- */
+button.pressed, path.pressed {
+  filter: drop-shadow(0 0 5px #00aaff) brightness(1.4);
+  transition: all 0.2s ease-in-out;
+}
+
+/* ---- Touchpad Glow ---- */
+#touchpad.pressed {
+  background: radial-gradient(circle, #00aaff 10%, transparent 70%);
+  border-radius: 8px;
+}
+
+/* ---- D-Pad Buttons ---- */
+#up.pressed,
+#down.pressed,
+#left.pressed,
+#right.pressed {
+  fill: #00aaff !important;
+}
+
+/* ---- Face Buttons (✖️, ◯, △, ⬜) ---- */
+#button-cross.pressed { fill: #00ccff; }
+#button-circle.pressed { fill: #ff0066; }
+#button-triangle.pressed { fill: #33ff33; }
+#button-square.pressed { fill: #cc00ff; }
+
+/* ---- Analog Stick Press ---- */
+#l3.pressed, #r3.pressed {
+  fill: #ffaa00;
+}
+
+
+
