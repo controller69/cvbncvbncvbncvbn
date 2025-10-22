@@ -1,0 +1,102 @@
+/* ===== PS4 Black & Navy Blue Ombre Theme ===== */
+
+/* Controller background */
+.controller.ds4 {
+  filter: drop-shadow(0 0 15px rgba(0, 0, 50, 0.6));
+  background: linear-gradient(145deg, #000000 0%, #0a1f44 100%);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+/* Buttons + D-Pad */
+.ds4 .button, 
+.ds4 .dpad {
+  filter: drop-shadow(0 0 5px rgba(0, 50, 255, 0.2));
+  transition: all 0.2s ease;
+}
+
+/* Pressed buttons */
+.ds4 .button.pressed, 
+.ds4 .dpad.pressed {
+  filter: drop-shadow(0 0 15px #007bff);
+  transform: scale(1.05);
+}
+
+/* Touchpad */
+.ds4 .touchpad {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 50, 150, 0.6);
+  border-radius: 8px;
+}
+
+/* Triggers */
+.ds4 .trigger {
+  background: linear-gradient(to bottom, #0a1f44, #000);
+  border: 1px solid rgba(0, 40, 100, 0.4);
+  box-shadow: inset 0 0 8px rgba(0, 0, 100, 0.3);
+}
+
+/* Sticks */
+.ds4 .stick {
+  background: radial-gradient(circle at center, #0d1b2a 40%, #000 100%);
+  box-shadow: inset 0 0 10px rgba(0, 0, 80, 0.4);
+  border: 1px solid rgba(0, 50, 150, 0.3);
+}
+
+/* Active stick movement */
+.ds4 .stick.pressed {
+  box-shadow: 0 0 10px #005bff, inset 0 0 6px #0038a8;
+}
+
+/* Face buttons (triangle, circle, cross, square) */
+.ds4 .button.circle, 
+.ds4 .button.triangle, 
+.ds4 .button.cross, 
+.ds4 .button.square {
+  color: #e0e0e0;
+  background: radial-gradient(circle at center, #000 30%, #0a1f44 100%);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Glowing when pressed */
+.ds4 .button.circle.pressed,
+.ds4 .button.triangle.pressed,
+.ds4 .button.cross.pressed,
+.ds4 .button.square.pressed {
+  box-shadow: 0 0 15px #007bff, 0 0 5px #00aaff inset;
+  transform: scale(1.1);
+}
+
+/* PS button */
+.ds4 .button.ps {
+  background: radial-gradient(circle at center, #000 40%, #001c3d 100%);
+  box-shadow: 0 0 8px rgba(0, 50, 255, 0.3);
+}
+.ds4 .button.ps.pressed {
+  box-shadow: 0 0 15px #007bff;
+}
+
+/* Bumpers */
+.ds4 .bumper {
+  background: linear-gradient(to top, #000, #0a1f44);
+  border: 1px solid rgba(0, 0, 100, 0.5);
+}
+
+/* Lightbar */
+.ds4 .lightbar {
+  background: linear-gradient(90deg, #002b80 0%, #007bff 100%);
+  box-shadow: 0 0 20px #007bff;
+  border-radius: 3px;
+}
+
+/* Text & labels */
+.ds4 .label {
+  color: #99b3ff;
+  text-shadow: 0 0 3px #001b44;
+}
+
+/* Hide background shadow from the default image (optional) */
+.controller.ds4 .disconnected {
+  display: none;
+}
